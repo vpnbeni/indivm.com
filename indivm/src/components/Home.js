@@ -3,8 +3,8 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import 'aos-animations/dist/animations.min.css';
 import 'aos-animations/dist/animations.min.js';
-import { Routes, Route, Link } from "react-router-dom";
 import NewCarousel from './NewCarousel';
+import { link } from 'react-router-dom';
 
 export default function Home() {
   AOS.init({

@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom';
 export default function Navbar() {
     return (
         <>
@@ -22,30 +22,30 @@ export default function Navbar() {
                     <div className="collapse d-lg-block me-5 justify-content-end navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav pt-4 ps-4 p-lg-0  pt-lg-0 p-3  mb-lg-0">
                             <li className="nav-item mx-2">
-                                <a className="nav-link active" aria-current="page" href="/">HOME</a>
+                                <Link className="nav-link active" aria-current="page" to="/">HOME</Link>
                             </li>
                             <li className="nav-item mx-2">
-                                <a className="nav-link active" aria-current="page" href="/about">ABOUT US</a>
+                                <Link className="nav-link active" aria-current="page" to="/about">ABOUT US</Link>
                             </li>
                             
                             <li className="nav-item mx-2 dropdown">
-                                <a className="nav-link text-white dropdown-toggle" href="#" data-bs-toggle="dropdown">  PRODUCTS  </a>
+                                <Link className="nav-link text-white dropdown-toggle" to="/solarmodule" data-bs-toggle="dropdown">  PRODUCTS  </Link>
                                 <ul className="dropdown-menu" style={{backgroundColor:"#004d4c"}}>
-                                    <li><a className="dropdown-item" href="/solarmodule"> Solar PV Module</a></li>
-                                    <li><a className="dropdown-item" href="/libattery"> Lithium Batteries  </a></li>
-                                    <li><a className="dropdown-item" href="/inverter"> Hybrid Inverters</a></li>
-                                    <li><a className="dropdown-item" href="/solarwaterheater"> Solar Water Heater</a></li>
+                                    <li><Link className="dropdown-item" to="/solarmodule"> Solar PV Module</Link></li>
+                                    <li><Link className="dropdown-item" to="/libattery"> Lithium Batteries  </Link></li>
+                                    <li><Link className="dropdown-item" to="/inverter"> Hybrid Inverters</Link></li>
+                                    <li><Link className="dropdown-item" to="/solarwaterheater"> Solar Water Heater</Link></li>
                                 </ul>
                             </li>
                             <li className="nav-item mx-2 dropdown">
                                 <a className="nav-link text-white dropdown-toggle" href="#" data-bs-toggle="dropdown">  OUR SUBSIDIARIES  </a>
                                 <ul className="dropdown-menu" style={{backgroundColor:"#004d4c"}}>
-                                    <li><a className="dropdown-item" href="#"> Oscar Electric Vehicles</a></li>
-                                    <li><a className="dropdown-item" href="#">Dew Engineering Works </a></li>
+                                    <li><Link className="dropdown-item" to="/"> Oscar Electric Vehicles</Link></li>
+                                    <li><Link className="dropdown-item" to="/">Dew Engineering Works </Link></li>
                                 </ul>
                             </li>
                             <li className="nav-item mx-2">
-                                <a className="nav-link active" aria-current="page" href="#">CONTACT US</a>
+                                <Link className="nav-link active" aria-current="page" to="/contact">CONTACT US</Link>
                             </li>
                         </ul>
                     </div>
