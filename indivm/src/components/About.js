@@ -1,8 +1,17 @@
 import React from 'react'
 
 export default function About() {
+  
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+      /* you can also use 'auto' behaviour
+         in place of 'smooth' */
+    });
+  };
   return (
-    <div className='' style={{ backgroundColor: '#ca9d10', paddingTop: '100px' }}>
+    <div className='' onLoad={scrollToTop} style={{ backgroundColor: '#ca9d10', paddingTop: '100px' }}>
       <div className='aboutUs container-fluid px-lg-4 p-2  pt-5 bg-white' style={{ width: '60%' }}>
         <h1 className='text-center'>About Us</h1>
         <p className=' fs-5 mx-lg-5 mx-3' style={{ textAlign: 'justify' }}>Indivm Energy Private Limited is an organization with a goal of contributing efforts to come out of dark polluted human lifestyle. Harnessing Renewable Green energy to the humanity is our moto.  So we are experienced professionals focused on producing quality work and making a significant impact. We enjoy applying our career experience and skills to managing projects through creative problem solving and innovative thinking. We possess a strong eye for detail and can thrive independently as well as in a team environment. We are confident we have what it takes to make a significant contribution to any business we join, and are always striving to develop and expand our professional skillset. Want to know more about our qualifications? Read about our journey right here.

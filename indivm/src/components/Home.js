@@ -4,12 +4,20 @@ import 'aos/dist/aos.css';
 import 'aos-animations/dist/animations.min.css';
 import 'aos-animations/dist/animations.min.js';
 import NewCarousel from './NewCarousel';
-import { link } from 'react-router-dom';
+import { Link, link } from 'react-router-dom';
 
 export default function Home() {
   AOS.init({
     duration: 1200,
   })
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+      /* you can also use 'auto' behaviour
+         in place of 'smooth' */
+    });
+  };
 
   return (
     <>
@@ -22,17 +30,14 @@ export default function Home() {
         <div className="row " >
           <div className="col-lg-4 col-12">
             <img src={require('../img/solar panel.png')} alt="" />
-            <i className="fa-solid fa-solar-panel"></i>
             <h4>Best Solar Panels</h4>
           </div>
           <div className="col-lg-4 col-12">
             <img src={require('../img/handshake.png')} alt="" />
-            <i className="fa-solid fa-solar-panel"></i>
             <h4>Most Trusted Brand</h4>
           </div>
           <div className="col-lg-4 col-12">
             <img src={require('../img/group.png')} alt="" />
-            <i className="fa-solid fa-solar-panel"></i>
             <h4>In house R&D team</h4>
           </div>
 
@@ -45,8 +50,9 @@ export default function Home() {
           <div className="col-lg-6 my-5 col-12  p-lg-5">
             <h1 data-aos="fade-in" data-aos-offset="200" className='fc-blue mx-2 mx-lg-5 mt-lg-5' >About Us</h1>
             <h1 data-aos="fade-right" data-aos-offset="200" className='mx-2 mx-lg-5 m-0' style={{ height: '2px', width: '50%', backgroundColor: '#045491', color: 'white' }}></h1>
-            <p className='p-lg-5  p-2 text-muted' style={{ textAlign: 'justify' }} data-aos="zoom-in" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="1000">Spark Solar is a globally renowned Indian manufacturer of high-performance solar panels. Capitalizing on its strength in solar panel manufacturing, it is committed to provide panels with unparalleled efficiency, and reliability to enable customers to maximize the returns on their PV projects. With its leading industry experience, continuous effort on R&D, and customer-oriented service Spark Solar is your most trustworthy long-term partner</p>
-            <button className='btnHover mx-2 mx-lg-5 border-0'>READ MORE</button>
+            <p className='p-lg-5  p-2 text-muted' style={{ textAlign: 'justify' }} data-aos="zoom-in" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="1000">Indivm Solar is a globally renowned Indian manufacturer of high-performance solar panels. Capitalizing on its strength in solar panel manufacturing, it is committed to provide panels with unparalleled efficiency, and reliability to enable customers to maximize the returns on their PV projects. With its leading industry experience, continuous effort on R&D, and customer-oriented service Indivm Solar is your most trustworthy long-term partner</p>
+            <Link className='btnHover mx-2 mx-lg-5 border-0' to='/about'>READ MORE</Link>
+
           </div>
           <div className="animateImgBg col-lg-6 col-12 ">
             <img className='p-2' src={require('../img/home1N.png')} data-aos="fade-up" data-aos-offset="150" data-aos-easing="ease-in-sine" data-aos-duration="200" />
@@ -65,20 +71,20 @@ export default function Home() {
           <div className="col-lg-6 my-5 col-12  p-lg-5">
             <h1 data-aos="fade-in" data-aos-offset="200" className='fc-blue mx-2 mx-lg-5 mt-lg-5' >Products</h1>
             <h1 data-aos="fade-right" data-aos-offset="200" className='mx-2 mx-lg-5 m-0' style={{ height: '2px', width: '50%', backgroundColor: '#045491', color: 'white' }}></h1>
-            <p className='p-lg-5  p-2 text-muted' style={{ textAlign: 'justify' }} data-aos="zoom-in" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="1000">As one of the world’s best solar panel manufacturer, Spark Solar offers range of solar panels which deliver above average energy yields. Spark Solar panels are used widely across solar installations for utility-scale power plants, businesses and rooftops</p>
-            <button className='btnHover mx-2 mx-lg-5 border-0'>DISCOVER MORE</button>
+            <p className='p-lg-5  p-2 text-muted' style={{ textAlign: 'justify' }} data-aos="zoom-in" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="1000">As one of the world’s best solar panel manufacturer, Indivm Solar offers range of solar panels which deliver above average energy yields. Indivm Solar panels are used widely across solar installations for utility-scale power plants, businesses and rooftops</p>
+            <Link to='/solarmodule' className='btnHover mx-2 mx-lg-5 border-0'>DISCOVER MORE</Link>
           </div>
 
         </div>
 
       </div>
-      {/* Why Choose Spark Solar */}
+      {/* Why Choose Indivm Solar */}
       <div className="container my-lg-5 my-3">
         <div className=" row m-0 mt-lg-5 p-0" >
           <div className="col-lg-6 my-5 col-12  p-lg-5">
-            <h1 data-aos="fade-in" data-aos-offset="200" className='fc-blue mx-2 mx-lg-5 mt-lg-5' >Why Choose Spark Solar</h1>
+            <h1 data-aos="fade-in" data-aos-offset="200" className='fc-blue mx-2 mx-lg-5 mt-lg-5' >Why Choose Indivm Solar</h1>
             <h1 data-aos="fade-right" data-aos-offset="200" className='mx-2 mx-lg-5 m-0' style={{ height: '2px', width: '50%', backgroundColor: '#045491', color: 'white' }}></h1>
-            <p className='p-lg-5  p-2 text-muted' style={{ textAlign: 'justify' }} data-aos="zoom-in" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="1000">Spark Solar’s blend of product quality, innovative features, company reliability and commitment to sustainable future makes us the ideal brand for your solar project. Spark Solar believes in continuously investing in development of new Solar Technologies and advanced Photovoltaic Systems that gives our products a leading edge</p>
+            <p className='p-lg-5  p-2 text-muted' style={{ textAlign: 'justify' }} data-aos="zoom-in" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="1000">Indivm Solar’s blend of product quality, innovative features, company reliability and commitment to sustainable future makes us the ideal brand for your solar project. Indivm Solar believes in continuously investing in development of new Solar Technologies and advanced Photovoltaic Systems that gives our products a leading edge</p>
             <button className='btnHover mx-2 mx-lg-5 border-0'>LEARN MORE</button>
           </div>
           <div className="animateImgBg col-lg-6 col-12 ">
@@ -99,7 +105,7 @@ export default function Home() {
             <h1 data-aos="fade-in" data-aos-offset="200" className='fc-blue mx-2 mx-lg-5 mt-lg-5' >Projects &#38; Services</h1>
             <h1 data-aos="fade-right" data-aos-offset="200" className='mx-2 mx-lg-5 m-0' style={{ height: '2px', width: '50%', backgroundColor: '#045491', color: 'white' }}></h1>
             <p className='p-lg-5  p-2 text-muted' style={{ textAlign: 'justify' }} data-aos="zoom-in" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="1000">
-              Spark Solar is a leading player in distributed and utility scale solar photovoltaic market. With a proven track record in Development, EPC, Operations and Maintenance Services the company provides 360o turnkey solutions customised to customer's needs</p>
+              Indivm Solar is a leading player in distributed and utility scale solar photovoltaic market. With a proven track record in Development, EPC, Operations and Maintenance Services the company provides 360o turnkey solutions customised to customer's needs</p>
             <button className='btnHover mx-2 mx-lg-5 border-0'>TAKE ME THERE</button>
           </div>
 
@@ -122,7 +128,6 @@ export default function Home() {
         </div>
 
       </div>
-      <div><i class="fa-solid fa-angle-up"></i></div>
     </>
 
   )

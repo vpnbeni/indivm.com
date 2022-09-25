@@ -4,6 +4,7 @@ import { faAngleRight } from '@fortawesome/free-solid-svg-icons'
 import { faLocationDot } from '@fortawesome/free-solid-svg-icons'
 import { faPhone } from '@fortawesome/free-solid-svg-icons'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { Link } from 'react-router-dom'
 
 export default function Footer() {
     return (
@@ -15,12 +16,12 @@ export default function Footer() {
                         </h2>
                         <div className='bg-muted mb-lg-3 mb-2' style={{ width: '190px', height: '2px', backgroundColor: '#808080' }}></div>
 
-                        <div className='my-lg-2' ><a href="#"> <FontAwesomeIcon icon={faAngleRight}></FontAwesomeIcon> &nbsp;  Spark 72 Cells Poly-Series</a></div>
-                        <div className='my-lg-2' ><a href="#"> <FontAwesomeIcon icon={faAngleRight}></FontAwesomeIcon> &nbsp;  Spark 72 Cells Mono-PERC-Series</a></div>
-                        <div className='my-lg-2' ><a href="#"> <FontAwesomeIcon icon={faAngleRight}></FontAwesomeIcon> &nbsp; Spark 144 Cells Rapid-Series-Poly</a></div>
-                        <div className='my-lg-2' ><a href="#"> <FontAwesomeIcon icon={faAngleRight}></FontAwesomeIcon> &nbsp;  Spark 144 Cells Rapid-SeriesMono</a></div>
-                        <div className='my-lg-2' ><a href="#"> <FontAwesomeIcon icon={faAngleRight}></FontAwesomeIcon> &nbsp;  Spark BIPV Solar Panels</a></div>
-                        <div className='my-lg-2' ><a href="#"> <FontAwesomeIcon icon={faAngleRight}></FontAwesomeIcon> &nbsp;  Download</a></div>
+                        <div className='my-lg-2' ><Link to="/solarmodule"> <FontAwesomeIcon icon={faAngleRight}></FontAwesomeIcon> &nbsp;  Solar PV Module</Link></div>
+                        <div className='my-lg-2' ><Link to="/libattery"> <FontAwesomeIcon icon={faAngleRight}></FontAwesomeIcon> &nbsp;  Lithium Batteries</Link></div>
+                        <div className='my-lg-2' ><Link to="/inverter"> <FontAwesomeIcon icon={faAngleRight}></FontAwesomeIcon> &nbsp; Hybrid Inverters</Link></div>
+                        <div className='my-lg-2' ><Link to="/solarwaterheater"> <FontAwesomeIcon icon={faAngleRight}></FontAwesomeIcon> &nbsp;  Solar Water Heater</Link></div>
+                        
+                        
 
                     </div>
                     <div className="col-lg-3 m-lg-0 my-3 " >
@@ -43,8 +44,8 @@ export default function Footer() {
 
                         <div className='my-lg-2' ><a href="#"> <FontAwesomeIcon icon={faLocationDot}></FontAwesomeIcon> &nbsp;  Indivm Energy Private Limited <br />
                             Kami Road, Sonepat - 131001 <br /> (Opp Sakkar Kui Mandir)</a></div>
-                        <div className='my-lg-2' ><a href="#"> <FontAwesomeIcon icon={faPhone}></FontAwesomeIcon> &nbsp; +91 8930232597 </a></div>
-                        <div className='my-lg-2' ><a href="#"> <FontAwesomeIcon icon={faEnvelope}></FontAwesomeIcon> &nbsp; abc@gmail.com</a></div>
+                        <div className='my-lg-2' ><a href="tel:+91 9518220044"> <FontAwesomeIcon icon={faPhone}></FontAwesomeIcon> &nbsp; +91 9518220044 </a></div>
+                        <div className='my-lg-2' ><a href="mailto:indivmenergy@gmail.com"> <FontAwesomeIcon icon={faEnvelope}></FontAwesomeIcon> &nbsp; indivmenergy@gmail.com</a></div>
 
 
                     </div>

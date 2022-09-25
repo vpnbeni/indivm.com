@@ -10,6 +10,8 @@ import SolarPVModules from './components/SolarPVModules';
 import LiBattery from './components/LiBattery';
 import DeyeInverter from './components/DeyeInverter';
 import JaySolar from './components/SolarWaterHeater';
+import ContactUs from './components/ContactUs';
+import WhatsAppBtn from './components/WhatsAppBtn';
 function App() {
   return (
     <BrowserRouter>
@@ -23,7 +25,10 @@ function App() {
         <Route path="/libattery" element={<LiBattery />} />
         <Route path="/inverter" element={<DeyeInverter />} />
         <Route path="/solarwaterheater" element={<JaySolar />} />
+        <Route path="/contact" element={<ContactUs />} />
+
       </Routes>
+      <WhatsAppBtn/>
       <Footer/>
     </div>
     </BrowserRouter>

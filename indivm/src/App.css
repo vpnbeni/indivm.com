@@ -9,7 +9,10 @@ a {
 body {
   box-sizing: border-box !important;
 
-  font-family: "Patua One", cursive;
+  font-family: "Macondo", cursive;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Mono", monospace;
 }
 
 .App {
@@ -107,6 +110,17 @@ body {
 #scrollToTop:hover {
   background-color: #333333;
 }
+.whatsAppBtn{
+  position: fixed;
+  width: 41px !important;
+  height: 41px !important;
+  border: 0;
+  right: 5%;
+  bottom: 20%;
+  z-index: 99;
+  cursor: pointer;
+  border-radius: 50%;
+}
 #myBtn:hover {
   background-color: #555; /* Add a dark-grey background on hover */
 }
@@ -152,6 +166,9 @@ body {
     height: 50px;
     transform: skew(50deg);
   }
+  .whatsAppBtn{
+    right: 7% !important;
+  }
   #triangle-right {
     width: 0;
     height: 0;
@@ -176,19 +193,22 @@ body {
   .soalrPVHead p {
     font-size: 40px !important;
   }
-  .sunbondPVWeb{
+  .sunbondPVWeb {
     width: 90%;
   }
   /* aobut us */
-  .aboutUs{
+  .aboutUs {
     width: 90% !important;
-    
   }
-  .aboutUs p{
+  
+  .aboutUs p {
     font-size: 20px !important;
   }
-  .aboutUs img{
+  .aboutUs img {
     width: 50% !important;
+  }
+  .contactUsCoverImg {
+    width: 75% !important;
   }
 }
 
@@ -229,7 +249,6 @@ body {
   .navbar .nav-item .dropdown-menu {
     margin-top: 0;
   }
-  
 }
 
 .App-header {
