@@ -46,6 +46,9 @@ export default function Navbar() {
                                 </ul>
                             </li>
                             <li className="nav-item mx-2">
+                                <Link className="nav-link active js-scroll-trigger" aria-current="page" to="/gallery">GALLERY</Link>
+                            </li>
+                            <li className="nav-item mx-2">
                                 <Link className="nav-link active" aria-current="page" to="/contact">CONTACT US</Link>
                             </li>
                         </ul>

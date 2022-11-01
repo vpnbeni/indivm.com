@@ -29,7 +29,7 @@ export default function Footer() {
                         </h2>
                         <div className='bg-muted mb-lg-3 mb-2' style={{ width: '190px', height: '2px', backgroundColor: '#808080' }}></div>
 
-                        <div className='my-lg-2' ><a href="#"> <FontAwesomeIcon icon={faAngleRight}></FontAwesomeIcon> &nbsp;  Company History</a></div>
+                        <div className='my-lg-2' ><a href="/about"> <FontAwesomeIcon icon={faAngleRight}></FontAwesomeIcon> &nbsp;  Company Profile</a></div>
                         <div className='my-lg-2' ><a href="#"> <FontAwesomeIcon icon={faAngleRight}></FontAwesomeIcon> &nbsp;  Events</a></div>
                         <div className='my-lg-2' ><a href="#"> <FontAwesomeIcon icon={faAngleRight}></FontAwesomeIcon> &nbsp; Gallery</a></div>
                         <div className='my-lg-2' ><a href="#"> <FontAwesomeIcon icon={faAngleRight}></FontAwesomeIcon> &nbsp;  Quality</a></div>
@@ -42,10 +42,15 @@ export default function Footer() {
                         </h2>
                         <div className='bg-muted mb-lg-3 mb-2' style={{ width: '190px', height: '2px', backgroundColor: '#808080' }}></div>
 
-                        <div className='my-lg-2' ><a href="#"> <FontAwesomeIcon icon={faLocationDot}></FontAwesomeIcon> &nbsp;  Indivm Energy Private Limited <br />
-                            Kami Road, Sonepat - 131001 <br /> (Opp Sakkar Kui Mandir)</a></div>
+                        <div className='my-lg-2' ><a href="#"> 
+                             <span className='font-weight-bold'> 
+                            Indivm Energy Private Limited </span> <br /> 
+                            <FontAwesomeIcon icon={faLocationDot}>
+                            </FontAwesomeIcon> &nbsp;
+                            Sonepat Ganaur Road, Opposite Sakar Kui Mandir Sonepat - 131001 <br /> </a></div>
                         <div className='my-lg-2' ><a href="tel:+91 9518220044"> <FontAwesomeIcon icon={faPhone}></FontAwesomeIcon> &nbsp; +91 9518220044 </a></div>
                         <div className='my-lg-2' ><a href="mailto:indivmenergy@gmail.com"> <FontAwesomeIcon icon={faEnvelope}></FontAwesomeIcon> &nbsp; indivmenergy@gmail.com</a></div>
+                        <div className='my-lg-2' ><a href="mailto:indivmenergy@gmail.com"> <FontAwesomeIcon icon={faEnvelope}></FontAwesomeIcon> &nbsp; indivmenergy@outlook.com</a></div>
 
 
                     </div>

@@ -37,7 +37,7 @@ export default function Home() {
             <h4>Most Trusted Brand</h4>
           </div>
           <div className="col-lg-4 col-12">
-            <img src={require('../img/group.png')} alt="" />
+            <img src={require('../img/group.png')} alt="" style={{objectFit:'cover'}}/>
             <h4>In house R&D team</h4>
           </div>
 
@@ -50,7 +50,7 @@ export default function Home() {
           <div className="col-lg-6 my-5 col-12  p-lg-5">
             <h1 data-aos="fade-in" data-aos-offset="200" className='fc-blue mx-2 mx-lg-5 mt-lg-5' >About Us</h1>
             <h1 data-aos="fade-right" data-aos-offset="200" className='mx-2 mx-lg-5 m-0' style={{ height: '2px', width: '50%', backgroundColor: '#045491', color: 'white' }}></h1>
-            <p className='p-lg-5  p-2 text-muted' style={{ textAlign: 'justify' }} data-aos="zoom-in" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="1000">Indivm Solar is a globally renowned Indian manufacturer of high-performance solar panels. Capitalizing on its strength in solar panel manufacturing, it is committed to provide panels with unparalleled efficiency, and reliability to enable customers to maximize the returns on their PV projects. With its leading industry experience, continuous effort on R&D, and customer-oriented service Indivm Solar is your most trustworthy long-term partner</p>
+            <p className='p-lg-5  p-2 text-muted' style={{ textAlign: 'justify' }} data-aos="zoom-in" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="1000">Indivm Solar is a globally renowned Indian supplier of high-performance solar panels. Capitalizing on its strength in solar panel designing, it is committed to provide panels with unparalleled efficiency, and reliability to enable customers to maximize the returns on their PV projects. With its leading industry experience, continuous effort on R&D, and customer-oriented service Indivm Solar is your most trustworthy long-term partner</p>
             <Link className='btnHover mx-2 mx-lg-5 border-0' to='/about'>READ MORE</Link>
 
           </div>

@@ -6,13 +6,11 @@ html {
 a {
   text-decoration: none !important;
 }
+
 body {
   box-sizing: border-box !important;
 
-  font-family: "Macondo", cursive;
-  font-family: "Montserrat", sans-serif;
-  font-family: "Roboto", sans-serif;
-  font-family: "Roboto Mono", monospace;
+  font-family: 'Noto Sans', sans-serif !important;
 }
 
 .App {
@@ -35,9 +33,9 @@ body {
 #triangle-right {
   width: 0;
   height: 0;
-  border-top: 60px solid transparent;
-  border-left: 70px solid #004d4c;
-  border-bottom: 60px solid transparent;
+  border-top: 50px solid transparent;
+  border-left: 60px solid #004d4c;
+  border-bottom: 50px solid transparent;
 }
 
 .parallelogram {
@@ -60,7 +58,7 @@ body {
   );
 }
 .logo {
-  height: 120px;
+  height: 100px;
   object-fit: cover;
 }
 .logo img {
@@ -126,18 +124,23 @@ body {
 }
 .Footer a {
   color: #808080;
-}
+  font-family: 'Noto Sans', sans-serif !important;
 
+}
+.imgHover:hover{
+  transform: scale(1.04);
+  cursor: pointer;
+}
 @media all and (max-width: 652px) {
   .logo {
-    height: 90px;
-    top: -21px;
+    height: 60px;
+    top: -5px;
   }
   .navTop {
-    height: 50px;
+    height: 30px;
   }
   .navbar {
-    top: 60px;
+    top: 35px;
     background: rgb(202, 157, 16);
     background: linear-gradient(
       90deg,
@@ -147,7 +150,11 @@ body {
   }
   .navRibben {
     width: 100px;
-    left: 30% !important;
+    left: 20% !important;
+    height: 30px;
+  }
+  .navRibben div{
+    height: inherit;
   }
   .nav-link {
     color: #004d4c !important;
@@ -158,7 +165,7 @@ body {
   }
 
   .carousel {
-    margin-top: 100px !important;
+    margin-top: 83px !important;
   }
 
   .parallelogram {
@@ -167,16 +174,16 @@ body {
     transform: skew(50deg);
   }
   .whatsAppBtn{
-    right: 7% !important;
+    right: 8% !important;
   }
   #triangle-right {
     width: 0;
     height: 0;
     margin: 0 !important;
     padding: 0 !important;
-    border-top: 45px solid transparent;
-    border-left: 60px solid #004d4c;
-    border-bottom: 45px solid transparent;
+    border-top: 30px solid transparent;
+    border-left: 45px solid #004d4c;
+    border-bottom: 30px solid transparent;
   }
   .logo img {
     height: inherit !important;
